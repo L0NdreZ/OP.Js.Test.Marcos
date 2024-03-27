@@ -4,9 +4,23 @@
   <title>
     Calculadora Básica
   </title>
+</head>
   <body>
+    <h1>Esta é a calculadora de baskara, você sabe como funciona?</h1>
+    <p>A fórmula de Bhaskara nos ajuda a resolver qualquer equação do segundo grau.
+    Primeiramente, convertemos a equação para a forma ax²+bx+c=0, na qual a, b e c são coeficientes. 
+    Em seguida, inserimos esses coeficientes na fórmula: (-b±√(b²-4ac))/(2a) .</p>
+    <button onclick="minhaFuncao()">vamos começar!</button>
+
+<script>
+function minhaFuncao() {
+  console.log('A função foi chamada');
+}
+</script>
+    
     <script>
-      Windows.alert
+      function minhaFuncao() {
+      window.alert('Vamos começar!')
       var a=Number(window.prompt('Digite o valor de A'))
       var b=Number(window.prompt('Digite o valor de B'))
       var c=Number(window.prompt('Digite o valor de C'))
@@ -15,8 +29,9 @@
       var bask2= (-b-delta**(1/2)/(a*2))
         window.alert('O resultado positivo é  '+bask1+)
         window.alert('O resultado negativo é  '+bask2+)
+      }
         
       
     </script>
   </body>
-</head>
+
